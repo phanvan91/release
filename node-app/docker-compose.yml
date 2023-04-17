@@ -4,22 +4,18 @@ networks:
   proxy:
     external:
       name: common_proxy
-
 services:
-     sphokidz_mysql:
-         container_name: release
-         image: mysql:8.0
-         environment:
-             MYSQL_ROOT_PASSWORD: "dev*I(O)P"
-             MYSQL_DATABASE: sphokidz
-             MYSQL_USER: sphokidz
-             MYSQL_PASSWORD: "dev*I(O)P"
-         volumes:
- #            - ./docker/mariadb-data:/var/lib/mysql
-             - ./docker/mysql-data:/var/lib/mysql
-             ## modify MySQL config
- #            - ./docker/my.cnf:/etc/mysql/my.cnf
-         ports:
-         -   3306:3306
-         networks:
-             - proxy
+  release_mysql:
+    container_name: release_db
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: "dev*I(O)P"
+      #MYSQL_DATABASE: sphokidz
+      #MYSQL_USER: sphokidz
+      #MYSQL_PASSWORD: "dev*I(O)P"
+    volumes:
+      - ./docker/mysql-data:/var/lib/mysql
+    ports:
+      - 3320:3306
+    networks:
+      - proxy
