@@ -1,0 +1,30 @@
+{
+  "name": "enjoywork-release-zone",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Kevin <thaitran@enjoyworks.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "artisan": "node artisan.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-form-data": "^2.0.18",
+    "express-validator": "^6.14.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3",
+    "node-php-password": "^0.1.2",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "sequelize": "^6.21.3"
+  }
+}

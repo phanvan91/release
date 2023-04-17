@@ -1,0 +1,100 @@
+body{
+    font-size: 12px;
+}
+.page-wrapper{
+    margin-left: 0 !important;
+}
+.navbar-brand, .logo-icon{
+    overflow: hidden;
+    height: 70px;
+    width: 230px !important;
+}
+.logo-icon img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.release-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.release-header .qrcode{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.release-header .qrcode svg{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.release-header .release-name {
+    width: calc(100% - 320px);
+}
+
+
+.release-header .release-name h4{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.release-header .button{
+    width: 200px;
+
+}
+.release-header .button .btn{
+    width: 100%;
+}
+
+#pagination{
+    margin-top: 50px
+}
+.page-link{
+    cursor: pointer;
+    color: #39cb7f;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #39cb7f;
+    border-color: #39cb7f;
+}
+
+@media only screen and (max-width: 480px) {
+    .release-header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .release-header .qrcode{
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        /*margin-right: 30px;*/
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .release-header .release-name {
+        width: 100%;
+    }
+    .release-header .release-name h4{
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .release-header .button{
+        width: 100%;
+
+    }
+}

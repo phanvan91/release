@@ -1,0 +1,197 @@
+.detail-container {
+    padding: 0 !important;
+    .main-detail-banner {
+        margin-bottom: 40px;
+        .card {
+            border: none;
+            //background-color: #0bb2fb;
+            border-radius: 0;
+            margin-bottom: 0;
+            background-image: url("../../../../public/images/background_detail.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-body {
+            padding-left: 11%;
+            padding-right: 11%;
+            .info-detail {
+                // padding-left: 0;
+                // &__content {
+                //     padding-left: 50px;
+                // }
+            }
+            .release-name {
+                h3 {
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+            }
+            .release-version {
+                h4 {
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #f17009;
+                    margin-bottom: 20px;
+                }
+            }
+            .btn-download {
+                .btn {
+                    border-radius: 4px;
+                    min-width: 282px;
+                }
+                .update-on {
+                    font-family: 'Arial';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .main-detail-info {
+        padding-left: 11%;
+        padding-right: 11%;
+
+        .list-release {
+            font-size: 14px;
+            max-width: 230px;
+            margin: auto;
+
+            .item {
+                cursor: pointer;
+            }
+            .active {
+                color: #fff;
+                background-color: #f17009;
+            }
+        }
+
+        .info-detail-note {
+            &__title {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 18px;
+                color: #000000;
+                margin-top: 0 !important;
+                // margin-bottom: 50px !important;
+            }
+        }
+        .content-note {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            color: #000000;
+            margin-bottom: 20px;
+            p {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #000000;
+            }
+        }
+        .info-ver-detail {
+            padding-left: 46px;
+            background-color: #fffceb;
+            border: 1px solid #e4e192 !important;
+            p {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #000000;
+            }
+        }
+    }
+}
+@media (max-width: 766px) {
+    .detail-container {
+        padding: 0 !important;
+        .main-detail-banner {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            .card {
+
+            }
+            .card-body {
+                padding: 40px 30px 50px;
+                .info-barcode {
+                    padding-left: 15px;
+                }
+                .info-detail {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    &__content {
+                        padding-top: 25px;
+                        padding-left: 0;
+                    }
+                }
+                .release-name {
+                    padding-bottom: 30px;
+                    h4 {
+                        margin-bottom: 0;
+                    }
+                }
+                .btn-download {
+                    .btn {
+
+                    }
+                    .update-on {
+
+                    }
+                }
+            }
+        }
+        .main-detail-info {
+            padding-left: 0px;
+            padding-right: 0px;
+            margin: 0;
+            .info-detail-note {
+                background: #fff;
+                padding: 30px 40px;
+                .content-note {
+                }
+                &__title {
+
+                }
+            }
+            .info-ver-detail {
+                background: #F9F9F9;
+                padding: 30px 40px;
+                p {
+
+                }
+            }
+            .list-release {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 280px) {
+    .detail-container .main-detail-banner .card-body .btn-download .btn {
+        min-width: 220px;
+    }
+    .detail-container .main-detail-info .info-ver-detail {
+        padding-left: 1rem !important;
+    }
+}
