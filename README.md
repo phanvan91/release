@@ -18,8 +18,7 @@ config docker mysql
 
 create DB:
 - connect DB 
-+ user: root 
-+ pass: dev*I(O)P
+- user: root, pass: dev*I(O)P
 - create database release_tool;
 - use release_tool;
 - import file sql: /node-app/release_1.sql
